@@ -1,0 +1,25 @@
+@media (max-width:991px) {
+  .box-info {
+    margin: 0;
+  }
+}
+@media (max-width:767px) {
+  .box-info {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width:540px) {
+	.inside-box{
+		width: 100%;
+	}
+	
+}
+
+@media (max-width:400px) {
+.btn-wrap .btn {
+    min-width: 150px;
+    margin: 0 3px;
+}
+	
+}

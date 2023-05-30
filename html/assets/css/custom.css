@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Source+Sans+Pro:wght@400;600;700;900&display=swap');
+body {
+  color: #fff;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  background-color: #000;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 700;
+}
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #F5821F;
+}
+h2 {
+  margin-bottom: 30px;
+  font-size: 1.5625rem;
+  position: relative;
+  color: #000;
+}
+h3 {
+  margin-bottom: 30px;
+  font-size: 1.5rem;
+}
+h4 {
+  margin-bottom: 20px;
+}
+h5 {
+  font-size: 1.375rem;
+  margin-bottom: 30px;
+}
+h6 {
+  font-size: 1.25rem;
+}
+img {
+  max-width: 100%;
+}
+a {
+  color: #F5821F;
+}
+a:hover {
+  color:#F5821F;
+}
+
+
+.custom-btn {
+  background-color: #fff;
+  color: #0087C1;
+  text-decoration: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+  display: inline-block;
+  -webkit-appearance: none;
+	border-color: #0087C1;
+}
+.custom-btn:hover {
+  background-color: #0779ac;
+  color: #fff;
+  text-decoration: none;
+}
+.btn-primary {
+  background-color: #0087C1;
+  color: #fff;
+  border: 1px solid #0087C1;
+  font-size: 18px;
+  min-width: 290px;
+  padding: 10px 30px;
+  border-radius: 30px;
+}
+.btn-primary:hover {
+  color: #fff;
+  background-color: #0779ac;
+  border-color: #0779ac;
+}
+.btn-primary.active, .btn-primary:active,  .btn-primary:focus {
+  color: #fff;
+  background-color: #0779ac;
+  border-color: #0779ac;
+	box-shadow: none;
+}
+.btn-secondary {
+  background-color: transparent;
+  color: #29B0ED;
+  border: 1px solid #29B0ED;
+  font-size: 18px;
+  min-width: 160px;
+  padding: 10px 30px;
+  border-radius: 0;
+}
+.btn-secondary:hover {
+  color: #fff;
+  background-color: #29B0ED;
+  border-color: #29B0ED;
+}
+.btn-secondary.active, .btn-secondary:active {
+  color: #fff;
+  background-color: #29B0ED;
+  border-color: #29B0ED;
+}
+ 
+.main{
+	padding: 30px 0;
+}
+
+/*************header ******************/
+.logo {
+  padding-bottom: 30px;
+}
+/******************box**********************/
+.box-info {
+  background-color: #fff;
+  color: #585858;
+  padding: 60px 40px;
+  border-radius: 30px;
+  text-align: center;
+	border:5px solid transparent;
+	margin: 0 20px;
+}
+.select{
+	border-color: #F5821F;
+}
+
+
+.box-info h2 {
+  padding-top: 30px;
+}
+
+.checkbtn {
+	position: relative;
+	display: inline-block;
+	margin-top: 20px;
+}
+
+.checkbtn input[type=radio] {
+  position: absolute;
+  visibility: hidden;
+}
+.checkbtn label {
+  display: inline-block;
+  position: relative;
+  font-weight: 300;
+  padding: 0;
+  margin: 0 auto;
+  z-index: 9;
+  cursor: pointer;
+  -webkit-transition: all 0.25s linear;
+	width: 30px;
+	height: 34px;
+}
+.checkbtn:hover label {
+  color: #FFFFFF;
+}
+.checkbtn .check {
+  display: block;
+  position: absolute;
+  border: 4px solid #FFFFFF;
+  border-radius: 100%;
+  height: 30px;
+  width: 30px;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  transition: border .25s linear;
+  -webkit-transition: border .25s linear;
+}
+.checkbtn:hover .check {
+  border: 4px solid #FFFFFF;
+}
+.checkbtn .check::before {
+  display: block;
+  position: absolute;
+  content: '';
+  border-radius: 100%;
+  height: 12px;
+  width: 12px;
+  top: 5px;
+  left: 5px;
+  margin: auto;
+  transition: background 0.25s linear;
+  -webkit-transition: background 0.25s linear;
+}
+.checkbtn input[type=radio]:checked ~ .check {
+  border: 4px solid #F5821F;
+}
+.checkbtn input[type=radio]:checked ~ .check::before {
+  background: #F5821F;
+}
+.checkbtn input[type=radio]:checked ~ label {
+  color: #F5821F;
+}
+
+
+.inside-box .form-control {
+    margin-right: 12px;
+}
+
+.inside-box {
+	width: 460px;
+	margin: 0 auto;
+	background-color: #fff;
+	border-radius: 30px;
+	padding: 30px;
+	color: #585858;
+}
+.otp-text{
+	font-size: 1.25rem;
+}
+.btn-wrap{
+	width: 100%;
+	justify-content: space-around;
+	padding-top: 30px;
+	align-items: center;
+}
+.btn-wrap .btn{
+	min-width: 170px;
+	margin: 0 5px;
+}
+
+
+.otp-input .form-control{
+	font-size: 40px;
+	color: #000;
+	border: none;
+	border-bottom: 2px solid #707070;
+	border-radius: 0;
+	text-align: center;
+}
+.otp-input .form-control:focus{
+	box-shadow:none;
+	border-bottom: 2px solid #40BE02;
+}
+
+.back-btn-wrap{
+	padding-top: 20px;
+}
+
+.back-btn{
+	background-color: #F5821F;
+	padding: 5px 15px;
+	border-radius: 30px;
+	color: #fff;
+	text-decoration: none;
+}
+.back-btn:hover{
+	color: #fff;
+	text-decoration: none;
+	background-color: #eb7611;
+}
+
+
+.qrinfo-text{
+	font-size: 1.625rem;
+}
+
+
+
